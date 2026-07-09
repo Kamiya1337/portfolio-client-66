@@ -1,0 +1,85 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Portfolio
+      - paragraph [ref=e7]: Academic Year 2025–26
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Đồng Quỳnh Nhi
+        - paragraph [ref=e10]: Ngôn Ngữ Ả Rập
+        - paragraph [ref=e11]: ULIS - VNU
+    - navigation "Portfolio sections" [ref=e12]:
+      - button "01 Overview" [ref=e13] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e18]: 01 Overview
+      - button "02 Assignments" [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+        - generic [ref=e22]: 02 Assignments
+      - button "03 Evidence" [ref=e23] [cursor=pointer]:
+        - img [ref=e24]
+        - generic [ref=e28]: 03 Evidence
+      - button "04 Rubric" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+        - generic [ref=e33]: 04 Rubric
+      - button "05 Reflection" [ref=e34] [cursor=pointer]:
+        - img [ref=e35]
+        - generic [ref=e37]: 05 Reflection
+    - paragraph [ref=e39]: Editorial Academic Archive
+  - generic [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: Portfolio Index
+        - paragraph [ref=e44]: Assignments / Bài tập & Dự án
+      - generic [ref=e45]: Academic Year 2025–26
+    - main [ref=e46]:
+      - generic [ref=e317]:
+        - button "Quay lại danh sách" [ref=e318] [cursor=pointer]:
+          - img [ref=e319]
+          - text: Quay lại danh sách
+        - article [ref=e321]:
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - paragraph [ref=e324]: Assignment 01
+              - paragraph [ref=e325]: Chương 1 & 2
+            - generic [ref=e326]:
+              - 'heading "Bài 1: Máy tính và quản lý tệp/thư mục" [level=1] [ref=e327]'
+              - paragraph [ref=e328]: Tổ chức không gian làm việc số và thiết lập quy tắc quản lý dữ liệu cá nhân.
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - paragraph [ref=e331]: Mục tiêu nhiệm vụ
+              - paragraph [ref=e332]: Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập.
+            - generic [ref=e333]:
+              - paragraph [ref=e334]: Kỹ năng áp dụng
+              - paragraph [ref=e335]: Quản lý hệ điều hành, Tổ chức dữ liệu, Lưu trữ đám mây
+          - generic [ref=e336]:
+            - paragraph [ref=e337]: Quá trình thực hiện
+            - paragraph [ref=e338]: Phân tích nhu cầu lưu trữ học tập, thiết lập cây thư mục theo môn học/kỳ học. Áp dụng quy tắc đặt tên file không dấu, dùng gạch dưới để dễ dàng tìm kiếm. Đồng bộ hóa với Google Drive.
+          - generic [ref=e339]:
+            - paragraph [ref=e340]: Sản phẩm & Minh chứng
+            - generic [ref=e341]:
+              - generic [ref=e342]:
+                - img [ref=e343]
+                - paragraph [ref=e346]: Báo cáo (PDF/Word)
+                - link "Xem báo cáo" [ref=e348] [cursor=pointer]:
+                  - /url: /docs/Bài 1.pdf
+                  - text: Xem báo cáo
+                  - img [ref=e349]
+              - generic [ref=e353]:
+                - img [ref=e354]
+                - paragraph [ref=e358]: Ảnh chụp màn hình
+                - link "Xem hình ảnh" [ref=e360] [cursor=pointer]:
+                  - /url: /images/Bài 1.jpg
+                  - text: Xem hình ảnh
+                  - img [ref=e361]
+              - generic [ref=e365]:
+                - img [ref=e366]
+                - paragraph [ref=e370]: Tài nguyên Google Drive
+                - link "Mở Google Drive" [ref=e372] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1KwzHibSRALSHLfUktZu7K-bsIhAkOeIe?usp=drive_link
+                  - text: Mở Google Drive
+                  - img [ref=e373]
+    - contentinfo [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - paragraph [ref=e134]: Editorial Academic Archive
+          - paragraph [ref=e135]: Đồng Quỳnh Nhi · ULIS - VNU
+        - paragraph [ref=e136]: Academic Year 2025–26

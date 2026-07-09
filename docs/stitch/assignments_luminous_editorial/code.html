@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@400&family=Plus+Jakarta+Sans:wght@700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .liquid-card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .liquid-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 20px 40px rgba(69, 54, 115, 0.1);
+        }
+        .star-divider {
+            position: relative;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #453673 50%, transparent);
+            width: 100%;
+        }
+        .star-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #453673;
+        }
+        body {
+            background: radial-gradient(circle at top left, #fdf8fe 0%, #ffd9df 40%, #e8ddff 80%);
+            min-height: 100vh;
+        }
+        .nav-item-active { border-bottom: 2px solid #453673; padding-bottom: 4px; font-weight: 700; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#46596f",
+                        "outline": "#797580",
+                        "surface": "#fdf8fe",
+                        "tertiary-fixed-dim": "#b4c8e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#ece6ed",
+                        "on-tertiary-fixed-variant": "#35485e",
+                        "on-primary-fixed": "#1f0e4c",
+                        "inverse-surface": "#313034",
+                        "on-background": "#1c1b1f",
+                        "primary": "#453673",
+                        "primary-fixed": "#e8ddff",
+                        "on-primary-fixed-variant": "#4c3d7a",
+                        "on-primary-container": "#d5c6ff",
+                        "secondary-fixed": "#ffd9df",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-surface": "#1c1b1f",
+                        "surface-container-highest": "#e6e1e7",
+                        "background": "#fdf8fe",
+                        "primary-fixed-dim": "#cebdff",
+                        "surface-tint": "#645593",
+                        "on-secondary-container": "#7a4a54",
+                        "on-surface-variant": "#48454f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f7f2f8",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#ddd8de",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fdbec9",
+                        "on-secondary-fixed": "#330f19",
+                        "tertiary-fixed": "#d0e4ff",
+                        "primary-container": "#5d4e8c",
+                        "surface-bright": "#fdf8fe",
+                        "inverse-primary": "#cebdff",
+                        "tertiary": "#2e4257",
+                        "on-tertiary-fixed": "#071d30",
+                        "on-secondary-fixed-variant": "#663a43",
+                        "outline-variant": "#cac4d1",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#f4b6c1",
+                        "secondary": "#81515a",
+                        "on-tertiary-container": "#bcd0ea",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f1ecf2",
+                        "surface-variant": "#e6e1e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "page-margin": "4rem",
+                        "section-gap": "6rem",
+                        "gutter": "2rem",
+                        "panel-padding": "3rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Work Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-bold": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-fixed overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-white/45 backdrop-blur-xl dark:bg-tertiary-container/45 border-b border-white/20 dark:border-outline/20 shadow-2xl shadow-primary/10 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center px-page-margin py-4 w-full max-w-screen-2xl mx-auto">
+<span class="font-display-lg text-headline-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Academic Portfolio</span>
+<div class="hidden md:flex gap-8 items-center font-label-bold text-label-bold">
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors" href="#">Overview</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary font-bold pb-1" href="#">Assignments</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors" href="#">Evidence</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors" href="#">Rubric</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors" href="#">Reflection</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold text-label-bold hover:scale-105 transition-transform active:scale-95">Contact</button>
+<img class="w-10 h-10 rounded-full border-2 border-white shadow-sm object-cover" data-alt="A professional studio headshot of Rachelle Beaudry, a creative professional with a friendly smile, set against a soft lilac background that perfectly matches the aesthetic of her portfolio. The lighting is soft and flattering, highlighting her blonde hair and pink blazer, creating a modern and approachable academic profile portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO8OL_9SchE64L_cXrgDjziM4yZWWne_Vk3uPIjxoms_nk-UPT6rxW12PKPlreAdSthIZF-MG30Vc0obAI5Fi3LMPY1ITfQI_i1Zdbg8uPmu0E94ZHWhAjmhR69JaynE3tMI2kBT3k5zKEeP2TqBaXINSYtyOi4xEGlkeUnGUob5LUm5ycZ2avuTe3LWPlRsDabrKq-hCfKR4iblYxRcnbHUc_RZqnyMx1-9F8IcssHxX7XnLlAj_edW6Cfqxt0BneYrfBvipY9AES"/>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-page-margin py-12 relative">
+<!-- Background Accents -->
+<div class="absolute -top-20 -left-20 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute top-1/2 -right-40 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<!-- Header Section -->
+<header class="text-center mb-16">
+<div class="inline-flex items-center gap-4 mb-4">
+<div class="h-px w-12 bg-primary/30"></div>
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">Portfolio Presentation</span>
+<div class="h-px w-12 bg-primary/30"></div>
+</div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-primary mb-2">Assignments</h1>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto">Applied learning, documented with care.</p>
+<div class="mt-8 flex justify-center">
+<div class="flex gap-2">
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
+<div class="w-2 h-2 rounded-full bg-primary/40"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary/40"></div>
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
+</div>
+</div>
+</header>
+<!-- Assignments Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-section-gap">
+<!-- Main Featured Assignment -->
+<div class="md:col-span-8 liquid-card p-panel-padding rounded-3xl flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-icon="computer">computer</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-3 py-1 bg-primary/10 text-primary text-label-bold font-label-bold rounded-full">BÀI 1</span>
+<div class="h-px flex-1 bg-primary/10"></div>
+</div>
+<h2 class="font-headline-lg text-primary mb-4 leading-tight">Máy tính và thế giới số</h2>
+<p class="text-on-surface-variant font-body-md mb-8 max-w-lg">
+                        Khám phá nền tảng của công nghệ hiện đại thông qua lăng kính phân tích hệ thống và tương tác người dùng. Một cái nhìn chi tiết vào cách phần cứng và phần mềm định hình tương lai.
+                    </p>
+</div>
+<div class="flex items-end justify-between">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold">A</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold">P</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold">+</div>
+</div>
+<button class="flex items-center gap-2 text-primary font-label-bold hover:gap-4 transition-all">
+                        Xem chi tiết <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Side Assignment 1 -->
+<div class="md:col-span-4 liquid-card p-panel-padding rounded-3xl flex flex-col group">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-6 group-hover:rotate-6 transition-transform">
+<span class="material-symbols-outlined" data-icon="search" data-weight="fill">search</span>
+</div>
+<span class="text-label-bold font-label-bold text-outline mb-2">BÀI 2</span>
+<h3 class="font-headline-lg text-[28px] text-primary mb-4">Khai thác thông tin</h3>
+<p class="text-on-surface-variant text-sm mb-auto">
+                    Kỹ thuật tìm kiếm và phân loại dữ liệu trong kỷ nguyên thông tin bùng nổ.
+                </p>
+<div class="mt-8 pt-4 border-t border-primary/5">
+<div class="flex justify-between items-center">
+<span class="text-xs text-outline">Đã hoàn thành</span>
+<span class="material-symbols-outlined text-primary" data-icon="task_alt">task_alt</span>
+</div>
+</div>
+</div>
+<!-- Side Assignment 2 -->
+<div class="md:col-span-4 liquid-card p-panel-padding rounded-3xl flex flex-col group">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="auto_awesome" data-weight="fill">auto_awesome</span>
+</div>
+<span class="text-label-bold font-label-bold text-outline mb-2">BÀI 3</span>
+<h3 class="font-headline-lg text-[28px] text-primary mb-4">Viết prompt thông minh</h3>
+<p class="text-on-surface-variant text-sm mb-auto">
+                    Làm chủ nghệ thuật giao tiếp với AI để tạo ra kết quả tối ưu và sáng tạo nhất.
+                </p>
+<div class="mt-8 pt-4 border-t border-primary/5">
+<div class="flex justify-between items-center">
+<span class="text-xs text-outline">Đang thực hiện</span>
+<div class="w-16 h-1 bg-primary/10 rounded-full overflow-hidden">
+<div class="w-2/3 h-full bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Showcase Image Panel -->
+<div class="md:col-span-8 h-80 rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcS8YOBBp_X_ywqPZusy3LJq-u2I9w_rOoDgz9SvLoNpNkzwNZrRVjer8vN5WbYIiQCB8vvjqsO_-ZQ2lbcn0Z5ce57FGTD6oNsupqnlyJJeTdadbi0c-ZjvRwa1_PlcxmUJtoqqd8rfvGB0lHurFqk1LR16Uv7btZ904QE4bfbcY5SArKAz3B2m8cj8wLnxv5znuASO4u8x6BL8nMw1yEG6kbuAGFh6xSq50D6J85lr3qZSJ_QyVN7exMSZyeMe0C7pUTVqOOIwoH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="font-label-bold text-label-bold uppercase tracking-widest opacity-80 mb-2 block">Tư duy hệ thống</span>
+<h4 class="font-headline-lg text-3xl">Giao diện người dùng hiện đại</h4>
+</div>
+<div class="absolute top-6 right-6">
+<span class="material-symbols-outlined text-white text-3xl animate-pulse" data-icon="stars" data-weight="fill">stars</span>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="glass-panel p-panel-padding rounded-[40px] text-center max-w-4xl mx-auto shadow-2xl shadow-primary/5 relative">
+<div class="absolute -top-4 -left-4">
+<span class="material-symbols-outlined text-primary text-4xl opacity-20" data-icon="flare">flare</span>
+</div>
+<h2 class="font-headline-lg text-primary mb-4">Bạn muốn hợp tác?</h2>
+<p class="text-on-surface-variant mb-8 px-8">Tôi luôn sẵn sàng thảo luận về những dự án sáng tạo và các giải pháp học thuật mới.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<a class="flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-label-bold hover:shadow-lg hover:shadow-primary/20 transition-all" href="mailto:hello@reallygreatsite.com">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    Liên hệ ngay
+                </a>
+<div class="flex items-center gap-4 px-6 py-4 rounded-full border border-primary/20 text-primary">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="font-label-bold">+123-456-7890</span>
+</div>
+</div>
+<div class="mt-12 flex justify-center gap-8 text-outline">
+<div class="flex items-center gap-2 hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+<span class="text-xs">@reallygreatsite</span>
+</div>
+<div class="flex items-center gap-2 hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+<span class="text-xs">portfolio.vn</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest/60 backdrop-blur-md dark:bg-surface-dim/60 border-t border-primary/10 py-12 mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center px-page-margin max-w-7xl mx-auto gap-gutter">
+<div class="flex flex-col gap-2">
+<span class="font-headline-lg text-primary">Academic Portfolio</span>
+<p class="text-outline text-label-bold font-body-md">© 2024 Institutional Portfolio. All rights reserved.</p>
+</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 text-label-bold" href="#">Institutional Privacy</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 text-label-bold" href="#">Accessibility</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 text-label-bold" href="#">Support</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 text-label-bold" href="#">Academic Guidelines</a>
+</div>
+</div>
+</footer>
+<!-- Decorative Stars Script -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const cursor = { x: e.clientX, y: e.clientY };
+            // Simple subtle parallax effect for some background elements could be added here
+        });
+    </script>
+</body></html>

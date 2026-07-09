@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Portfolio | Đồng Quỳnh Nhi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400;700&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#46596f",
+                    "outline": "#797580",
+                    "surface": "#fdf8fe",
+                    "tertiary-fixed-dim": "#b4c8e2",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#ece6ed",
+                    "on-tertiary-fixed-variant": "#35485e",
+                    "on-primary-fixed": "#1f0e4c",
+                    "inverse-surface": "#313034",
+                    "on-background": "#1c1b1f",
+                    "primary": "#453673",
+                    "primary-fixed": "#e8ddff",
+                    "on-primary-fixed-variant": "#4c3d7a",
+                    "on-primary-container": "#d5c6ff",
+                    "secondary-fixed": "#ffd9df",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f4eff5",
+                    "on-surface": "#1c1b1f",
+                    "surface-container-highest": "#e6e1e7",
+                    "background": "#fdf8fe",
+                    "primary-fixed-dim": "#cebdff",
+                    "surface-tint": "#645593",
+                    "on-secondary-container": "#7a4a54",
+                    "on-surface-variant": "#48454f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f7f2f8",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#f1ecf2",
+                    "surface-variant": "#e6e1e7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "page-margin": "4rem",
+                    "section-gap": "6rem",
+                    "gutter": "2rem",
+                    "panel-padding": "3rem"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Work Sans"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-bold": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background: linear-gradient(135deg, #fdf8fe 0%, #ffe8f0 30%, #e0f2fe 70%, #fdf8fe 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .star-divider {
+            position: relative;
+            height: 1px;
+            background: rgba(69, 54, 115, 0.2);
+            width: 100%;
+        }
+        .star-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #453673;
+            font-size: 1.5rem;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-halo {
+            box-shadow: 0 0 80px rgba(69, 54, 115, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/45 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-white/20 shadow-2xl shadow-primary/10">
+<div class="flex justify-between items-center px-page-margin py-4 w-full max-w-screen-2xl mx-auto">
+<div class="font-display-lg text-[24px] lg:text-[32px] text-primary tracking-tight font-black">
+                D.M.HANG
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-bold text-label-bold" href="#">Overview</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Assignments</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Evidence</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Rubric</a>
+<a class="text-on-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Reflection</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-2 rounded-full font-label-bold text-label-bold scale-95 active:scale-90 transition-transform">
+                    Contact
+                </button>
+<img class="w-10 h-10 rounded-full object-cover border-2 border-white/50" data-alt="A refined and professional headshot of a Vietnamese student, Đồng Quỳnh Nhi, with soft lighting and a minimalist, pastel lavender background. She has a friendly, scholarly expression, reflecting the academic context of the University of Languages and International Studies. The image is clean and high-end, fitting a creative portfolio aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvi9tpurmnGhcB2ycJj-KzF5zT8u5nO19yMYmekgHyC4RVdgkGZxD-Imctkw4jFXvclZzHzafjaTRgNRfXFFnpMWSb-cLN9SLLQ4HazIlWBynZMXiOk2pQkwVx-LfcrRr7MmwXxeXHDrrHLJ8-w7KepIv9aAYmktNfwIA9SpI98EuM0fq3gohXptxUHZwx2aX9GqPaTUVk8pw8foEtepfeyDorb_A-Deem1RlJAqUKM_oHlq-8bj6kaOegGqRhNOx2f_2pOdH4INsy"/>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 lg:px-page-margin">
+<!-- Hero Section -->
+<section class="min-h-[870px] flex flex-col justify-center relative py-12">
+<div class="grid lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 z-10 fade-in">
+<div class="inline-flex items-center gap-2 bg-white/60 px-4 py-1.5 rounded-full mb-8 border border-white/40 shadow-sm">
+<span class="text-primary font-label-bold text-[12px] uppercase tracking-widest">Portfolio Presentation</span>
+</div>
+<h1 class="font-display-lg text-primary mb-2 leading-tight">
+<span class="block">PORTFOLIO</span>
+<span class="text-secondary font-headline-lg block mt-[-10px] italic font-light">Ngôn Ngữ &amp; Văn Hóa Ả Rập</span>
+</h1>
+<div class="star-divider my-10">
+<span class="material-symbols-outlined star-icon left-0">spark</span>
+<span class="material-symbols-outlined star-icon right-[20%]">flare</span>
+</div>
+<div class="glass-panel p-8 rounded-[2rem] border border-white/30 glow-halo max-w-xl">
+<div class="flex items-center gap-6">
+<div class="bg-primary/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-primary scale-150" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-primary text-[28px] leading-none mb-1">Đồng Quỳnh Nhi</h2>
+<p class="text-on-surface-variant font-body-md opacity-80 italic">Chuyên ngành: Ngôn Ngữ Ả Rập • ULIS - VNU</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-full font-label-bold text-label-bold flex items-center gap-2 hover:translate-y-[-2px] transition-transform shadow-lg shadow-primary/20">
+                            KHÁM PHÁ <span class="material-symbols-outlined">east</span>
+</button>
+<div class="flex items-center gap-2 px-4">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="relative z-10 rounded-[3rem] overflow-hidden border-[12px] border-white/30 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full aspect-[3/4] object-cover" data-alt="A professional and aesthetic photograph of a female student in her early 20s, with a gentle and thoughtful expression. She is wearing a soft pink blazer over a white top, set against a clean, dream-like lavender and pastel pink studio background. The lighting is ethereal and high-key, creating a high-fashion, academic portfolio feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy08hv3a4UjnfNhnl-2fe_qhYdwb1HKVF7i0xbp4OzgCNk39BbCHZinROP7WORTZ0xIcOIFFn-W-rosi3d1IPHVY0CSBLb4VPkGWgh5ojgp_EbqYyMX8QL0zhCfa5AQXfc4rwC0du075L8lKAI01YGnK7S0lloBY-zBt-l_HeI56Ot-xvuHZYxsU8jIPzzT4EqE0xIxLDfMecyfjQwSclWYxTrIpDdUmBdRmZMifHdJmKKcjuBItBB2ZpEqBipPQMT-7lb47oU_kHr"/>
+</div>
+<!-- Decorative back elements -->
+<div class="absolute top-10 -right-10 w-full h-full bg-secondary-fixed/30 rounded-[3rem] -rotate-3 -z-10 blur-xl"></div>
+<div class="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl z-20 flex flex-col gap-1 max-w-[200px]">
+<span class="font-label-bold text-[10px] text-primary/60 uppercase">Khóa học</span>
+<span class="font-headline-lg text-[18px] text-primary leading-tight">Batch 2025-2026</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Detail Section -->
+<section class="py-section-gap">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-primary mb-4">Chi Tiết Hồ Sơ</h2>
+<div class="w-24 h-1 bg-primary/20 mx-auto rounded-full"></div>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Academic Card -->
+<div class="glass-panel p-panel-padding rounded-[2.5rem] border border-white/40 shadow-sm hover:translate-y-[-8px] transition-all duration-500">
+<span class="material-symbols-outlined text-primary mb-6 text-[40px]">school</span>
+<h3 class="font-headline-lg text-[24px] text-primary mb-4">Học thuật</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Theo đuổi đam mê ngôn ngữ tại Đại học Ngoại Ngữ - ĐHQGHN, tập trung vào giao thoa văn hóa.</p>
+<ul class="space-y-3 font-label-bold text-[13px] text-primary/80">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Ngôn Ngữ Ả Rập</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> GPA Mục tiêu: 3.8/4.0</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Nghiên cứu Văn hóa</li>
+</ul>
+</div>
+<!-- Goals Card -->
+<div class="glass-panel p-panel-padding rounded-[2.5rem] border border-white/40 shadow-sm hover:translate-y-[-8px] transition-all duration-500">
+<span class="material-symbols-outlined text-primary mb-6 text-[40px]">auto_awesome</span>
+<h3 class="font-headline-lg text-[24px] text-primary mb-4">Mục tiêu</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Xây dựng nền tảng vững chắc về giảng dạy và dịch thuật chuyên nghiệp trong môi trường quốc tế.</p>
+<ul class="space-y-3 font-label-bold text-[13px] text-primary/80">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Chứng chỉ IELTS 8.0+</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Kỹ năng thuyết trình</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Tư duy phản biện</li>
+</ul>
+</div>
+<!-- Creative Card -->
+<div class="glass-panel p-panel-padding rounded-[2.5rem] border border-white/40 shadow-sm hover:translate-y-[-8px] transition-all duration-500">
+<span class="material-symbols-outlined text-primary mb-6 text-[40px]">palette</span>
+<h3 class="font-headline-lg text-[24px] text-primary mb-4">Sáng tạo</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Kết hợp nghệ thuật thị giác và ngôn từ để truyền tải thông điệp nhân văn sâu sắc.</p>
+<ul class="space-y-3 font-label-bold text-[13px] text-primary/80">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Nhiếp ảnh chân dung</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Thiết kế Portfolio</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Viết lách sáng tạo</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Learning Map Section -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+<div class="grid lg:grid-cols-2 gap-section-gap items-center">
+<div>
+<h2 class="font-headline-lg text-primary mb-6">Lộ trình học tập</h2>
+<p class="text-body-md text-on-surface-variant mb-12 max-w-lg">
+                        Hành trình từ kiến thức nền tảng đến sự tinh thông trong ngôn ngữ, được ghi lại qua từng giai đoạn phát triển tại ULIS.
+                    </p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start group">
+<div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition-colors">01</div>
+<div>
+<h4 class="font-label-bold text-primary text-[18px] mb-1">Nền tảng Ngôn ngữ</h4>
+<p class="text-on-surface-variant text-[15px]">Củng cố ngữ pháp, từ vựng và 4 kỹ năng nghe-nói-đọc-viết cơ bản.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition-colors">02</div>
+<div>
+<h4 class="font-label-bold text-primary text-[18px] mb-1">Văn hóa &amp; Đất nước học</h4>
+<p class="text-on-surface-variant text-[15px]">Tìm hiểu về lịch sử, xã hội và con người các quốc gia nói tiếng Ả Rập.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition-colors">03</div>
+<div>
+<h4 class="font-label-bold text-primary text-[18px] mb-1">Dịch thuật &amp; Giảng dạy</h4>
+<p class="text-on-surface-variant text-[15px]">Ứng dụng kiến thức chuyên sâu vào thực tiễn nghề nghiệp tương lai.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="glass-panel p-6 rounded-[3rem] border border-white/50 shadow-2xl relative z-10">
+<img class="w-full rounded-[2.5rem] object-cover aspect-video" data-alt="A clean, minimalist and artistic map-like graphic or a collage of academic materials (books, transcripts, a student ID card from ULIS) arranged in a flat-lay photography style on a white marble surface. Soft sunlight shadows from a nearby window fall across the scene, creating a sophisticated and inspiring academic atmosphere. The colors are muted pastels, consistent with the dreamy professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk_C5aagDK_JWvIwwVtlF7gOP2g58sxXTAO_TgzaWFjK97CkbUuIvBJ7IkKKQRAfAgFQWL-lkqPXwdZXvxjCiTvDdOXMsIkdV94kBPDah7DdbQnOM6sg7kdmXtY2M5WRseIWCPfbm2fFKiYjpXjjF-xJToXWNutMWsAkoXqGuvsGOOkMqQ5HinOJMwKhJtTpc_m9VM-TBBTE9JeS8lZdKdWrDk7OJJyhX2QdPYWh3cqyTcZfdsp4INTR9bYDW2GP59ZI6jqDpnqFPZ"/>
+</div>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-pink-200/40 blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-200/40 blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest/60 backdrop-blur-md border-t border-primary/10 py-12 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-page-margin max-w-7xl mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-lg text-primary mb-2">D.M.H</span>
+<p class="text-on-surface-variant font-label-bold text-[12px] opacity-60">© 2024 Arabic Language Learning Portfolio. ULIS - VNU.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-outline hover:text-primary transition-colors font-label-bold" href="#">Privacy</a>
+<a class="text-outline hover:text-primary transition-colors font-label-bold" href="#">Accessibility</a>
+<a class="text-outline hover:text-primary transition-colors font-label-bold" href="#">Support</a>
+<a class="text-outline hover:text-primary transition-colors font-label-bold" href="#">Guidelines</a>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction: subtle mouse parallax for hero image
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            const heroImg = document.querySelector('section:first-of-type img');
+            if(heroImg) {
+                heroImg.parentElement.style.transform = `translate(${moveX}px, ${moveY}px) rotate(2deg)`;
+            }
+        });
+
+        // Simple smooth scroll for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

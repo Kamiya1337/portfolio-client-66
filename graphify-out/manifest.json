@@ -1,0 +1,132 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1781440542.3106432,
+    "ast_hash": "376ac8a7940675443cc9dd2d1b6b9f40",
+    "semantic_hash": "376ac8a7940675443cc9dd2d1b6b9f40"
+  },
+  "eslint.config.js": {
+    "mtime": 1781440542.3126469,
+    "ast_hash": "fa91453358b56681481f75f81d1bfccd",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1781440542.3226607,
+    "ast_hash": "d6fb3a234ec0fad25850ac4f680db6bc",
+    "semantic_hash": "d6fb3a234ec0fad25850ac4f680db6bc"
+  },
+  "postcss.config.js": {
+    "mtime": 1781440542.3226607,
+    "ast_hash": "5b84f4567208c7c747079c0477373231",
+    "semantic_hash": ""
+  },
+  "src/App.jsx": {
+    "mtime": 1782531595.0330412,
+    "ast_hash": "6843e92841fa85cb739ab4e406ff992c",
+    "semantic_hash": ""
+  },
+  "src/components/AssignmentCard.jsx": {
+    "mtime": 1782531724.051225,
+    "ast_hash": "ed19ed0f9b5d7494b21d197d9845d99c",
+    "semantic_hash": ""
+  },
+  "src/components/AssignmentDetail.jsx": {
+    "mtime": 1782531760.953579,
+    "ast_hash": "b48d4c08bbcfc6390d0120858cdb4495",
+    "semantic_hash": ""
+  },
+  "src/components/EvidenceTable.jsx": {
+    "mtime": 1782531807.0200272,
+    "ast_hash": "9b98951af75ac9b4c682624b311a1df1",
+    "semantic_hash": ""
+  },
+  "src/components/Hero.jsx": {
+    "mtime": 1782531659.7835639,
+    "ast_hash": "448213fdae2d4b4ddce6e9795fcde48f",
+    "semantic_hash": ""
+  },
+  "src/components/HomeTab.jsx": {
+    "mtime": 1782531944.6802804,
+    "ast_hash": "2badfd880176c7b1ca537b6b33d66331",
+    "semantic_hash": ""
+  },
+  "src/components/ProjectsTab.jsx": {
+    "mtime": 1782531745.2863536,
+    "ast_hash": "717c6b48d4fca58adb07944b543d7765",
+    "semantic_hash": ""
+  },
+  "src/components/RubricTable.jsx": {
+    "mtime": 1782531856.675857,
+    "ast_hash": "267f65735045e8974774bfe34cc0d6ad",
+    "semantic_hash": ""
+  },
+  "src/components/Sidebar.jsx": {
+    "mtime": 1782531628.6155646,
+    "ast_hash": "fabc74377386b3d0ec6e5e022111956f",
+    "semantic_hash": ""
+  },
+  "src/components/Summary.jsx": {
+    "mtime": 1782531898.7755458,
+    "ast_hash": "4b2497a1a2bf297d142939935139057c",
+    "semantic_hash": ""
+  },
+  "src/data/portfolioData.js": {
+    "mtime": 1782401155.6553068,
+    "ast_hash": "6111eec674b9ce00b7757179bd723611",
+    "semantic_hash": ""
+  },
+  "src/main.jsx": {
+    "mtime": 1781440542.4651973,
+    "ast_hash": "45c1e9c3c636a05a9d36e2dc1fe59957",
+    "semantic_hash": ""
+  },
+  "tailwind.config.js": {
+    "mtime": 1782531496.2274044,
+    "ast_hash": "d0ed787022e4580668333973c9afbb9e",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1781440542.4651973,
+    "ast_hash": "199e1221ae03d6974fdc8b5e23787b98",
+    "semantic_hash": ""
+  },
+  "src/components/PreviewModal.jsx": {
+    "mtime": 1781963389.3356924,
+    "ast_hash": "f3571800bb450ebfcfc76e1d587236b8",
+    "semantic_hash": ""
+  },
+  "src/hooks/useScrollReveal.js": {
+    "mtime": 1781627680.8575037,
+    "ast_hash": "abc53071a038afd4455be760bbe535ab",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-30-18-068Z.yml": {
+    "mtime": 1782367919.945896,
+    "ast_hash": "f33f0e66edadc23d949a2d1e6912a31e",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-31-37-251Z.yml": {
+    "mtime": 1782367920.5801818,
+    "ast_hash": "ee88abb5c26361c5f7140c6b50b58b1f",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-32-39-728Z.yml": {
+    "mtime": 1782367910.029928,
+    "ast_hash": "20229e168b1fd645edf44690bdc6ee4d",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-33-05-556Z.yml": {
+    "mtime": 1782367910.5340514,
+    "ast_hash": "946d038a11a9ab1ee55246777238e4df",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-33-28-676Z.yml": {
+    "mtime": 1782367911.1038098,
+    "ast_hash": "2e11f9bff676c7c7bb77e8dd46574806",
+    "semantic_hash": ""
+  },
+  ".playwright-cli/page-2026-06-16T16-34-29-200Z.yml": {
+    "mtime": 1782367911.6020331,
+    "ast_hash": "946d038a11a9ab1ee55246777238e4df",
+    "semantic_hash": ""
+  }
+}

@@ -1,0 +1,210 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Portfolio
+      - paragraph [ref=e7]: Academic Year 2025–26
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Đồng Quỳnh Nhi
+        - paragraph [ref=e10]: Ngôn Ngữ Ả Rập
+        - paragraph [ref=e11]: ULIS - VNU
+    - navigation "Portfolio sections" [ref=e12]:
+      - button "01 Overview" [ref=e13] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e18]: 01 Overview
+      - button "02 Assignments" [active] [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+        - generic [ref=e22]: 02 Assignments
+      - button "03 Evidence" [ref=e23] [cursor=pointer]:
+        - img [ref=e24]
+        - generic [ref=e28]: 03 Evidence
+      - button "04 Rubric" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+        - generic [ref=e33]: 04 Rubric
+      - button "05 Reflection" [ref=e34] [cursor=pointer]:
+        - img [ref=e35]
+        - generic [ref=e37]: 05 Reflection
+    - paragraph [ref=e39]: Editorial Academic Archive
+  - generic [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: Portfolio Index
+        - paragraph [ref=e44]: Assignments / Bài tập & Dự án
+      - generic [ref=e45]: Academic Year 2025–26
+    - main [ref=e46]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - paragraph [ref=e141]: Curated Portfolio Archive
+          - heading "Applied learning, documented with care." [level=1] [ref=e142]
+          - paragraph [ref=e143]: Sáu bài tập học phần được trình bày như một hồ sơ học thuật, giữ nguyên báo cáo, minh chứng và liên kết tài nguyên thực tế.
+        - generic [ref=e144]:
+          - article [ref=e145]:
+            - generic [ref=e146]:
+              - 'img "Minh chứng Bài 1: Máy tính và quản lý tệp/thư mục" [ref=e147]'
+              - generic [ref=e148]: Assignment 01
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - generic [ref=e151]: Chương 1 & 2
+                - generic [ref=e152]: Đang hoàn thiện
+              - 'heading "Bài 1: Máy tính và quản lý tệp/thư mục" [level=2] [ref=e153]'
+              - paragraph [ref=e154]: Tổ chức không gian làm việc số và thiết lập quy tắc quản lý dữ liệu cá nhân.
+              - generic [ref=e155]:
+                - generic [ref=e156]: Quản lý hệ điều hành
+                - generic [ref=e157]: Tổ chức dữ liệu
+                - generic [ref=e158]: Lưu trữ đám mây
+              - generic [ref=e159]:
+                - link "Report" [ref=e160] [cursor=pointer]:
+                  - /url: /docs/Bài 1.pdf
+                  - img [ref=e161]
+                  - text: Report
+                - link "Drive" [ref=e164] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1KwzHibSRALSHLfUktZu7K-bsIhAkOeIe?usp=drive_link
+                  - img [ref=e165]
+                  - text: Drive
+              - button "View Case Study" [ref=e169] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e170]
+          - article [ref=e172]:
+            - generic [ref=e173]:
+              - 'img "Minh chứng Bài 2: Khai thác dữ liệu và đánh giá thông tin" [ref=e174]'
+              - generic [ref=e175]: Assignment 02
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - generic [ref=e178]: Chương 2
+                - generic [ref=e179]: Đang hoàn thiện
+              - 'heading "Bài 2: Khai thác dữ liệu và đánh giá thông tin" [level=2] [ref=e180]'
+              - paragraph [ref=e181]: Áp dụng toán tử tìm kiếm nâng cao và đánh giá nguồn tin học thuật.
+              - generic [ref=e182]:
+                - generic [ref=e183]: Toán tử tìm kiếm
+                - generic [ref=e184]: Đánh giá CRAAP
+                - generic [ref=e185]: Phân tích tin giả
+              - generic [ref=e186]:
+                - link "Report" [ref=e187] [cursor=pointer]:
+                  - /url: /docs/Bài 2.pdf
+                  - img [ref=e188]
+                  - text: Report
+                - link "Drive" [ref=e191] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1JnTW3W7XiP5TLx1dYu034sT70DMDryQI?usp=drive_link
+                  - img [ref=e192]
+                  - text: Drive
+              - button "View Case Study" [ref=e196] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e197]
+          - article [ref=e199]:
+            - generic [ref=e200]:
+              - 'img "Minh chứng Bài 3: Viết prompt hiệu quả và sử dụng AI" [ref=e201]'
+              - generic [ref=e202]: Assignment 03
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: Chương 3
+                - generic [ref=e206]: Đang hoàn thiện
+              - 'heading "Bài 3: Viết prompt hiệu quả và sử dụng AI" [level=2] [ref=e207]'
+              - paragraph [ref=e208]: Kỹ thuật giao tiếp với mô hình ngôn ngữ lớn (LLMs).
+              - generic [ref=e209]:
+                - generic [ref=e210]: Prompt Engineering
+                - generic [ref=e211]: Tư duy phân tích
+                - generic [ref=e212]: Sử dụng GenAI
+              - generic [ref=e213]:
+                - link "Report" [ref=e214] [cursor=pointer]:
+                  - /url: /docs/Bài 3.pdf
+                  - img [ref=e215]
+                  - text: Report
+                - link "Drive" [ref=e218] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1Ja3ZvsJC8eEgm-Fkrp0plmTdgshGyvID?usp=drive_link
+                  - img [ref=e219]
+                  - text: Drive
+              - button "View Case Study" [ref=e223] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e224]
+          - article [ref=e226]:
+            - generic [ref=e227]:
+              - 'img "Minh chứng Bài 4: Hợp tác trực tuyến trong môi trường số" [ref=e228]'
+              - generic [ref=e229]: Assignment 04
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]: Chương 4
+                - generic [ref=e233]: Đang hoàn thiện
+              - 'heading "Bài 4: Hợp tác trực tuyến trong môi trường số" [level=2] [ref=e234]'
+              - paragraph [ref=e235]: Sử dụng các nền tảng số để quản lý dự án và làm việc nhóm.
+              - generic [ref=e236]:
+                - generic [ref=e237]: Quản lý dự án
+                - generic [ref=e238]: Giao tiếp số
+                - generic [ref=e239]: Công cụ hợp tác (Google Workspace/Notion)
+              - generic [ref=e240]:
+                - link "Report" [ref=e241] [cursor=pointer]:
+                  - /url: /docs/Bài 4.pdf
+                  - img [ref=e242]
+                  - text: Report
+                - link "Drive" [ref=e245] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/13E8lkbPkgOI0O3Sn5JY5CZafHC1bpVmc?usp=drive_link
+                  - img [ref=e246]
+                  - text: Drive
+              - button "View Case Study" [ref=e250] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e251]
+          - article [ref=e253]:
+            - generic [ref=e254]:
+              - 'img "Minh chứng Bài 5: Sáng tạo nội dung số với AI" [ref=e255]'
+              - generic [ref=e256]: Assignment 05
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - generic [ref=e259]: Chương 5
+                - generic [ref=e260]: Đang hoàn thiện
+              - 'heading "Bài 5: Sáng tạo nội dung số với AI" [level=2] [ref=e261]'
+              - paragraph [ref=e262]: Tạo ra các sản phẩm truyền thông số có sự hỗ trợ của Trí tuệ nhân tạo.
+              - generic [ref=e263]:
+                - generic [ref=e264]: Thiết kế số
+                - generic [ref=e265]: Tạo sinh hình ảnh/văn bản
+                - generic [ref=e266]: Công cụ thiết kế AI
+              - generic [ref=e267]:
+                - link "Report" [ref=e268] [cursor=pointer]:
+                  - /url: /docs/Bài 5.pdf
+                  - img [ref=e269]
+                  - text: Report
+                - link "Drive" [ref=e272] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1BvSbXWTuHLZmbWt5irYKuRnglJqhunRV?usp=drive_link
+                  - img [ref=e273]
+                  - text: Drive
+              - button "View Case Study" [ref=e277] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e278]
+          - article [ref=e280]:
+            - generic [ref=e281]:
+              - 'img "Minh chứng Bài 6: An toàn số, liêm chính học thuật và AI có trách nhiệm" [ref=e282]'
+              - generic [ref=e283]: Assignment 06
+            - generic [ref=e284]:
+              - generic [ref=e285]:
+                - generic [ref=e286]: Chương 6
+                - generic [ref=e287]: Đang hoàn thiện
+              - 'heading "Bài 6: An toàn số, liêm chính học thuật và AI có trách nhiệm" [level=2] [ref=e288]'
+              - paragraph [ref=e289]: Hiểu và áp dụng các quy tắc đạo đức khi sử dụng công nghệ và AI.
+              - generic [ref=e290]:
+                - generic [ref=e291]: Bảo mật thông tin
+                - generic [ref=e292]: Trích dẫn tài liệu
+                - generic [ref=e293]: Đạo đức AI
+              - generic [ref=e294]:
+                - link "Report" [ref=e295] [cursor=pointer]:
+                  - /url: /docs/Bài 6.pdf
+                  - img [ref=e296]
+                  - text: Report
+                - link "Drive" [ref=e299] [cursor=pointer]:
+                  - /url: https://drive.google.com/drive/folders/1zW7txCiii5YbJJpFyEq_Pudr33wFD3zH?usp=drive_link
+                  - img [ref=e300]
+                  - text: Drive
+              - button "View Case Study" [ref=e304] [cursor=pointer]:
+                - text: View Case Study
+                - img [ref=e305]
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - paragraph [ref=e310]: Academic Standards
+            - heading "Evidence before decoration." [level=2] [ref=e311]
+            - paragraph [ref=e312]: Mỗi hồ sơ ưu tiên tính chính xác của nội dung, khả năng truy xuất tài nguyên và sự minh bạch trong quá trình thực hiện.
+          - generic [ref=e313]:
+            - paragraph [ref=e314]: Archive Scope
+            - paragraph [ref=e315]: "06"
+            - paragraph [ref=e316]: documented assignments
+    - contentinfo [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - paragraph [ref=e134]: Editorial Academic Archive
+          - paragraph [ref=e135]: Đồng Quỳnh Nhi · ULIS - VNU
+        - paragraph [ref=e136]: Academic Year 2025–26

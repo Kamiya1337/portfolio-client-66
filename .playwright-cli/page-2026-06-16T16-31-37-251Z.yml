@@ -1,0 +1,111 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Portfolio
+      - paragraph [ref=e7]: Academic Year 2025–26
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Đồng Quỳnh Nhi
+        - paragraph [ref=e10]: Ngôn Ngữ Ả Rập
+        - paragraph [ref=e11]: ULIS - VNU
+    - navigation "Portfolio sections" [ref=e12]:
+      - button "01 Overview" [ref=e13] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e18]: 01 Overview
+      - button "02 Assignments" [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+        - generic [ref=e22]: 02 Assignments
+      - button "03 Evidence" [ref=e23] [cursor=pointer]:
+        - img [ref=e24]
+        - generic [ref=e28]: 03 Evidence
+      - button "04 Rubric" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+        - generic [ref=e33]: 04 Rubric
+      - button "05 Reflection" [ref=e34] [cursor=pointer]:
+        - img [ref=e35]
+        - generic [ref=e37]: 05 Reflection
+    - paragraph [ref=e39]: Editorial Academic Archive
+  - generic [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: Portfolio Index
+        - paragraph [ref=e44]: Overview / Tổng quan
+      - generic [ref=e45]: Academic Year 2025–26
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: Overview / Tổng quan
+            - heading "Arabic Language & Culture Learning Portfolio" [level=1] [ref=e53]:
+              - text: Arabic Language &
+              - text: Culture Learning Portfolio
+            - generic [ref=e54]:
+              - paragraph [ref=e55]: Portfolio môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.
+              - generic [ref=e56]:
+                - button "Mục bài tập" [ref=e57] [cursor=pointer]:
+                  - text: Mục bài tập
+                  - img [ref=e58]
+                - button "Minh chứng" [ref=e60] [cursor=pointer]:
+                  - text: Minh chứng
+                  - img [ref=e61]
+          - complementary [ref=e65]:
+            - img "Đồng Quỳnh Nhi portfolio owner" [ref=e66]
+            - paragraph [ref=e67]: Portfolio Owner
+            - heading "Đồng Quỳnh Nhi" [level=2] [ref=e68]
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - term [ref=e71]: Major
+                - definition [ref=e72]: Ngôn Ngữ Ả Rập
+              - generic [ref=e73]:
+                - term [ref=e74]: Institution
+                - definition [ref=e75]: ULIS - VNU
+                - definition [ref=e76]: Trường Đại học Ngoại Ngữ - Đại học Quốc gia Hà Nội
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - paragraph [ref=e80]: ĐỊNH VỊ CÁ NHÂN
+            - heading "Digital Catalyst" [level=2] [ref=e81]
+            - paragraph [ref=e82]: Data-driven Thinking × Digital Creativity
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Là một Marketer tương lai, em định vị mình là một "Digital Catalyst" - người thúc đẩy sự thay đổi thông qua dữ liệu và sáng tạo kỹ thuật số. Bản sắc của em nằm ở điểm giao thoa giữa Tư duy Phân tích Dữ liệu (Data-driven) và Sức sáng tạo Không giới hạn (Digital Creativity). Em biến những con số khô khan thành thông điệp chạm đến cảm xúc, và dùng công nghệ làm đòn bẩy để tối ưu hóa trải nghiệm khách hàng, biến những ý tưởng táo bạo thành kết quả kinh doanh thực tế.
+            - paragraph [ref=e85]: Portfolio này không chỉ là tập hợp các bài tập bộ môn Công nghệ số và AI, mà còn là cuốn nhật ký ghi lại hành trình em khám phá, làm chủ công nghệ và từng bước chuyển hóa lý thuyết thành những sản phẩm mang tới cho công chúng.
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - paragraph [ref=e90]: Portfolio Navigation
+              - heading "Module Explorer" [level=2] [ref=e91]
+            - paragraph [ref=e92]: Navigate the academic journey through coursework, supporting evidence, assessment criteria, and reflection.
+          - generic [ref=e93]:
+            - button "01 Coursework Assignments and applied academic work." [ref=e94] [cursor=pointer]:
+              - text: "01"
+              - generic [ref=e96]:
+                - heading "Coursework" [level=3] [ref=e97]
+                - paragraph [ref=e98]: Assignments and applied academic work.
+            - button "02 Evidence Reports, media, and linked learning artifacts." [ref=e101] [cursor=pointer]:
+              - text: "02"
+              - generic [ref=e102]:
+                - generic [ref=e103]:
+                  - heading "Evidence" [level=3] [ref=e104]
+                  - paragraph [ref=e105]: Reports, media, and linked learning artifacts.
+                - img [ref=e106]
+            - button "03 Rubric Evaluation criteria and portfolio readiness." [ref=e109] [cursor=pointer]:
+              - text: "03"
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - heading "Rubric" [level=3] [ref=e112]
+                  - paragraph [ref=e113]: Evaluation criteria and portfolio readiness.
+                - img [ref=e114]
+            - button "04 Reflection Personal insight, challenges, and next steps." [ref=e117] [cursor=pointer]:
+              - text: "04"
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - heading "Reflection" [level=3] [ref=e120]
+                  - paragraph [ref=e121]: Personal insight, challenges, and next steps.
+                - img [ref=e122]
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Academic Framework
+          - paragraph [ref=e129]: Strategy becomes credible when it is documented, reviewed, and reflected upon.
+    - contentinfo [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - paragraph [ref=e134]: Editorial Academic Archive
+          - paragraph [ref=e135]: Đồng Quỳnh Nhi · ULIS - VNU
+        - paragraph [ref=e136]: Academic Year 2025–26

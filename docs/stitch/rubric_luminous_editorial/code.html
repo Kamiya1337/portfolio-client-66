@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rubric | Academic Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Work+Sans:wght@400&amp;family=Plus+Jakarta+Sans:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#46596f",
+                        "outline": "#797580",
+                        "surface": "#fdf8fe",
+                        "tertiary-fixed-dim": "#b4c8e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#ece6ed",
+                        "on-tertiary-fixed-variant": "#35485e",
+                        "on-primary-fixed": "#1f0e4c",
+                        "inverse-surface": "#313034",
+                        "on-background": "#1c1b1f",
+                        "primary": "#453673",
+                        "primary-fixed": "#e8ddff",
+                        "on-primary-fixed-variant": "#4c3d7a",
+                        "on-primary-container": "#d5c6ff",
+                        "secondary-fixed": "#ffd9df",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f4eff5",
+                        "on-surface": "#1c1b1f",
+                        "surface-container-highest": "#e6e1e7",
+                        "background": "#fdf8fe",
+                        "primary-fixed-dim": "#cebdff",
+                        "surface-tint": "#645593",
+                        "on-secondary-container": "#7a4a54",
+                        "on-surface-variant": "#48454f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f7f2f8",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#ddd8de",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fdbec9",
+                        "on-secondary-fixed": "#330f19",
+                        "tertiary-fixed": "#d0e4ff",
+                        "primary-container": "#5d4e8c",
+                        "surface-bright": "#fdf8fe",
+                        "inverse-primary": "#cebdff",
+                        "tertiary": "#2e4257",
+                        "on-tertiary-fixed": "#071d30",
+                        "on-secondary-fixed-variant": "#663a43",
+                        "outline-variant": "#cac4d1",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#f4b6c1",
+                        "secondary": "#81515a",
+                        "on-tertiary-container": "#bcd0ea",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f1ecf2",
+                        "surface-variant": "#e6e1e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "page-margin": "4rem",
+                        "section-gap": "6rem",
+                        "gutter": "2rem",
+                        "panel-padding": "3rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Work Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-bold": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background: linear-gradient(135deg, #fdf8fe 0%, #fdbec9 30%, #cebdff 70%, #fdf8fe 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px 0 rgba(69, 54, 115, 0.05);
+        }
+
+        .ambient-glow {
+            box-shadow: 0 0 60px 10px rgba(206, 189, 255, 0.3);
+        }
+
+        .hairline-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(69, 54, 115, 0.2), transparent);
+            position: relative;
+        }
+
+        .hairline-divider::after {
+            content: '✦';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #453673;
+            font-size: 14px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/45 backdrop-blur-xl dark:bg-tertiary-container/45 docked full-width top-0 sticky border-b border-white/20 dark:border-outline/20 shadow-2xl shadow-primary/10 z-50">
+<div class="flex justify-between items-center px-page-margin py-4 w-full max-w-screen-2xl mx-auto">
+<span class="font-display-lg text-headline-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Academic Portfolio</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant/80 dark:text-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Overview</a>
+<a class="text-on-surface-variant/80 dark:text-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Assignments</a>
+<a class="text-on-surface-variant/80 dark:text-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Evidence</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary font-bold pb-1 font-label-bold text-label-bold" href="#">Rubric</a>
+<a class="text-on-surface-variant/80 dark:text-surface-variant/80 hover:text-primary transition-colors font-label-bold text-label-bold" href="#">Reflection</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white rounded-full px-6 py-2 font-label-bold text-label-bold hover:opacity-90 transition-all scale-95 active:scale-90">Contact</button>
+<img class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/20" data-alt="A professional circular profile portrait of Rachelle Beaudry, a creative photography student, with soft atmospheric lighting in a high-end academic setting. The aesthetic is dreamy and professional, matching the lavender and pastel color palette of the portfolio. Minimalist and elegant composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvtJjWxU0KOWI0JAfUhPvu3qzBAfjZMp836dFyZYwOOVp-TdIFdVhnX6Z57UVdoSceQDzwL56DiWc26-ASWPbLA_hzsQUSu23vusPht_hh5lTi4t4VqSoyWQgX-hXVQkYkqdth33sb7m2nWjJIVPW0eQbchMBH8EczCM1qIAcb88FXYxzsS5xy4RKeKfy4h6K8RXPDgkCY5H5myVGgCg9IEN4WYlsEW-YT0g6_JvWG7CRfYL_s7TKIsySv4qPOAl6zLoVgkaSy4zhp"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="h-screen w-72 fixed left-0 top-0 hidden lg:flex flex-col bg-white/45 backdrop-blur-2xl dark:bg-tertiary-container/30 border-r border-white/10 shadow-[20px_0_40px_rgba(69,54,115,0.05)] pt-24 z-40">
+<div class="px-8 mb-8">
+<h2 class="font-display-lg text-headline-lg text-primary leading-tight">Rachelle Beaudry</h2>
+<p class="text-on-surface-variant opacity-70 font-label-bold text-label-bold">Creative Photography</p>
+</div>
+<nav class="flex flex-col gap-1 flex-grow">
+<a class="flex items-center gap-4 text-on-surface-variant px-8 py-4 hover:bg-white/20 transition-all hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">visibility</span>
+<span class="font-body-md text-body-md">Overview</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-8 py-4 hover:bg-white/20 transition-all hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-body-md text-body-md">Assignments</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-8 py-4 hover:bg-white/20 transition-all hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-body-md text-body-md">Evidence</span>
+</a>
+<a class="flex items-center gap-4 bg-primary/10 text-primary border-r-4 border-primary px-8 py-4 font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<span class="font-body-md text-body-md">Rubric</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-8 py-4 hover:bg-white/20 transition-all hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-body-md text-body-md">Reflection</span>
+</a>
+</nav>
+<div class="px-8 pb-8 flex flex-col gap-4 border-t border-primary/5 pt-8">
+<a class="flex items-center gap-4 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-bold text-label-bold">Settings</span>
+</a>
+<button class="w-full bg-white/40 border border-white/60 text-primary font-label-bold text-label-bold py-3 rounded-full hover:bg-white/60 transition-all">Download CV</button>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="lg:ml-72 min-h-screen pt-12 pb-24 px-6 md:px-page-margin max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-section-gap flex flex-col md:flex-row md:items-end justify-between gap-gutter">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined">star_rate</span>
+<span class="font-label-bold text-label-bold uppercase tracking-widest">Performance Dashboard</span>
+</div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-primary mb-6">Assessment Matrix</h1>
+<div class="hairline-divider w-full md:w-3/4 mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-xl">
+                    An comprehensive evaluation of creative competencies, technical proficiency, and conceptual depth within the Creative Photography curriculum.
+                </p>
+</div>
+<div class="glass-panel ambient-glow rounded-[2rem] p-8 flex items-center gap-6 border border-white/40">
+<div class="relative w-24 h-24">
+<svg class="w-full h-full transform -rotate-90">
+<circle cx="48" cy="48" fill="transparent" r="40" stroke="rgba(69,54,115,0.1)" stroke-width="8"></circle>
+<circle class="text-primary" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="0" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-label-bold text-xl text-primary">100%</div>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary">READINESS STATUS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Academic evaluation ledger completed.</p>
+</div>
+</div>
+</header>
+<!-- Bento Grid Assessment -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Rubric Main Table Panel -->
+<div class="md:col-span-8 glass-panel rounded-[3rem] p-panel-padding border border-white/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20 floating">
+<span class="material-symbols-outlined text-8xl text-primary">auto_awesome</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Vietnamese Content Breakdown</h2>
+<div class="space-y-6">
+<!-- Rubric Row 1 -->
+<div class="group hover:bg-white/20 p-6 rounded-2xl transition-all border border-transparent hover:border-white/40">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-bold text-primary">TECHNICAL PROFICIENCY</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Distinction</span>
+</div>
+<p class="text-on-surface-variant mb-4 italic">Tiêu chí đánh giá về kỹ thuật nhiếp ảnh và xử lý hậu kỳ.</p>
+<div class="w-full bg-primary/5 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%]"></div>
+</div>
+</div>
+<!-- Rubric Row 2 -->
+<div class="group hover:bg-white/20 p-6 rounded-2xl transition-all border border-transparent hover:border-white/40">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-bold text-primary">CONCEPTUAL RIGOR</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Exceptional</span>
+</div>
+<p class="text-on-surface-variant mb-4 italic">Sự chặt chẽ trong ý tưởng sáng tạo và thực hiện nội dung.</p>
+<div class="w-full bg-primary/5 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[98%]"></div>
+</div>
+</div>
+<!-- Rubric Row 3 -->
+<div class="group hover:bg-white/20 p-6 rounded-2xl transition-all border border-transparent hover:border-white/40">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-bold text-primary">CRITICAL REFLECTION</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Complete</span>
+</div>
+<p class="text-on-surface-variant mb-4 italic">Khả năng tự đánh giá và phản biện về các tác phẩm của mình.</p>
+<div class="w-full bg-primary/5 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[100%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-primary/10 flex items-center justify-between">
+<p class="font-label-bold text-label-bold text-on-surface-variant/60 uppercase">Certified Review: 2024</p>
+<div class="flex -space-x-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed border-2 border-white flex items-center justify-center text-xs font-bold">+4</div>
+</div>
+</div>
+</div>
+<!-- Side Metrics Column -->
+<div class="md:col-span-4 space-y-gutter">
+<!-- Summary Card -->
+<div class="glass-panel rounded-[2.5rem] p-8 border border-white/20 relative overflow-hidden group hover:scale-[1.02] transition-transform duration-500">
+<div class="absolute -bottom-12 -right-12 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">insights</span>
+<h3 class="font-headline-lg text-2xl text-primary mb-2">Matrix Summary</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Consistent excellence across all modules, demonstrating a master-level grasp of creative lighting.</p>
+</div>
+<!-- Featured Image Panel -->
+<div class="glass-panel rounded-[2.5rem] p-2 border border-white/20 h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover rounded-[2.2rem] group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT5v27_EuL5KbrCsG6y1N_gvL9CrXs6mw-Zifx3NA47eWxDoIQRdGepimu1v12MS8QKHSNTPNfpQuH6G7vXEutVAhXnRWC3yOiC5QLE7eMBgaxuxpgsndO9MUck13xsQvWCaoQRiTabQPZwCq9J12ibdpAxFAjQrLYLtmO5f_WS70vtvy4rH67EUwGpuUvGtde-FjBlqpXEo4BnawhwzRP10gbzo6z3J_qjnUzKeWEJmrgsy87qp4Uv-LgKLiVtv0b2D99b7tan0Gm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-8">
+<span class="text-white font-label-bold text-label-bold uppercase tracking-widest">Assessment Reference 32</span>
+</div>
+</div>
+<!-- Sparkle Accent Card -->
+<div class="bg-primary text-white rounded-[2.5rem] p-8 ambient-glow flex flex-col justify-between aspect-square relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<circle cx="20" cy="20" fill="white" r="1"></circle>
+<circle cx="80" cy="40" fill="white" r="1"></circle>
+<circle cx="50" cy="70" fill="white" r="1"></circle>
+<circle cx="30" cy="90" fill="white" r="1"></circle>
+</svg>
+</div>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<div>
+<h4 class="font-headline-lg text-3xl mb-4 leading-tight">Ready for Presentation</h4>
+<button class="bg-white text-primary rounded-full px-6 py-3 font-label-bold text-label-bold hover:bg-surface transition-all flex items-center gap-2 group">
+                            Finalize Report
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Feedback Section -->
+<section class="mt-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-1 px-4 bg-primary/20 rounded-full"></div>
+<span class="font-label-bold text-primary uppercase tracking-widest">Evaluator Feedback</span>
+</div>
+<blockquote class="font-display-lg text-3xl text-primary mb-8 leading-relaxed italic">
+                    "Rachelle has demonstrated a unique ability to bridge the gap between technical photography and emotive storytelling."
+                </blockquote>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container"></div>
+<div>
+<p class="font-label-bold text-on-surface">Dr. Elena Thorne</p>
+<p class="text-xs text-on-surface-variant font-label-bold uppercase">Senior Lecturer, Visual Arts</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 glass-panel rounded-[3rem] aspect-video flex items-center justify-center border border-white/40 p-8">
+<div class="text-center">
+<div class="mb-4 relative inline-block">
+<span class="material-symbols-outlined text-6xl text-primary/30">psychology_alt</span>
+<span class="material-symbols-outlined absolute -top-2 -right-2 text-2xl text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">spark</span>
+</div>
+<h3 class="font-label-bold text-primary mb-2">Metacognitive Evidence</h3>
+<p class="text-on-surface-variant max-w-xs mx-auto">Click to explore the reflection logic behind each assessment score.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest/60 backdrop-blur-md dark:bg-surface-dim/60 full-width py-12 border-t border-primary/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-page-margin max-w-7xl mx-auto gap-gutter">
+<div>
+<span class="font-headline-lg text-primary">Academic Portfolio</span>
+<p class="text-outline mt-2 font-body-md text-label-bold">© 2024 Institutional Portfolio. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 font-body-md text-label-bold" href="#">Institutional Privacy</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 font-body-md text-label-bold" href="#">Accessibility</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 font-body-md text-label-bold" href="#">Support</a>
+<a class="text-outline hover:text-primary transition-colors hover:underline decoration-primary/30 font-body-md text-label-bold" href="#">Academic Guidelines</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for the progress circle
+        const circle = document.querySelector('circle.text-primary');
+        const radius = circle.r.baseVal.value;
+        const circumference = radius * 2 * Math.PI;
+        
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+            const offset = circumference - (percent / 100 * circumference);
+            circle.style.strokeDashoffset = offset;
+        }
+
+        // Simulating loading animation
+        setTimeout(() => setProgress(100), 500);
+    </script>
+</body></html>
