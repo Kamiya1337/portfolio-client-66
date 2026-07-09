@@ -5,10 +5,12 @@ export default function useScrollReveal(dependency) {
     const root = document.documentElement;
     const revealTargets = document.querySelectorAll([
       '.page-intro',
-      '.portfolio-main main .editorial-card',
-      '.portfolio-main main article',
-      '.portfolio-main > main > div > header',
-      '.portfolio-main main main > section',
+      '.portfolio-app main .editorial-card',
+      '.portfolio-app main article',
+      '.portfolio-app main section',
+      '.portfolio-app main header',
+      '.portfolio-app main table',
+      '.portfolio-app main img',
     ].join(','));
 
     revealTargets.forEach((element) => {
@@ -18,10 +20,6 @@ export default function useScrollReveal(dependency) {
 
     if (dependency === 'evidence') {
       document.querySelector('.portfolio-main main .editorial-card')?.classList.add('soft-peach-glow');
-    }
-
-    if (dependency === 'rubric') {
-      document.querySelector('.portfolio-main main .bg-obsidian.rounded-xl')?.classList.add('soft-peach-glow', 'reveal');
     }
 
     const elements = [...document.querySelectorAll('.reveal:not(.is-visible)')];

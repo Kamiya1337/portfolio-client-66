@@ -4,8 +4,8 @@ export default function PreviewModal({ previewData, onClose }) {
   if (!previewData.isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-primary/45 p-3 backdrop-blur-md sm:p-6" role="dialog" aria-modal="true" aria-label="Xem trước minh chứng">
-      <div className="paper-stack flex h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-[2rem] border border-white/50 bg-white/55 shadow-2xl backdrop-blur-2xl">
+    <div className="modal-backdrop fixed inset-0 z-[100] flex items-center justify-center bg-primary/45 p-3 backdrop-blur-md sm:p-6" role="dialog" aria-modal="true" aria-label="Xem trước minh chứng">
+      <div className="modal-panel paper-stack flex h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-[2rem] border border-white/50 bg-white/55 shadow-2xl backdrop-blur-2xl">
         <div className="paper-texture flex items-center justify-between border-b border-white/50 bg-white/45 px-5 py-4">
           <div>
             <p className="editorial-label">Evidence Preview</p>

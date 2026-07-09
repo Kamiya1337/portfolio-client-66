@@ -57,7 +57,7 @@ export default function App() {
                 key={id}
                 type="button"
                 onClick={() => setActiveTab(id)}
-                className={`whitespace-nowrap rounded-full px-4 py-2 transition-all ${activeTab === id ? 'bg-primary text-white shadow-[0_12px_28px_rgba(69,54,115,0.18)]' : 'hover:bg-white/55 hover:text-primary'}`}
+                className={`motion-nav-item whitespace-nowrap rounded-full px-4 py-2 transition-all ${activeTab === id ? 'motion-nav-active bg-primary text-white shadow-[0_12px_28px_rgba(69,54,115,0.18)]' : 'hover:bg-white/55 hover:text-primary'}`}
               >
                 {label}
               </button>
@@ -71,7 +71,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="flex-1">{renderContent()}</main>
+      <main key={activeTab} className="page-transition flex-1">{renderContent()}</main>
 
       <footer className="site-footer border-t border-white/40 bg-white/45 px-6 py-7 backdrop-blur-xl sm:px-8 xl:px-16">
         <div className="mx-auto flex max-w-[1280px] flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
