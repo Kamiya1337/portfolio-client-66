@@ -32,7 +32,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 1.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 1.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     },
     {
       id: 2,
@@ -45,7 +45,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 2.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 2.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 3.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 3.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 4.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 4.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     },
     {
       id: 5,
@@ -84,7 +84,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 5.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 5.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ export const portfolioData = {
       evidenceImg: "/images/Bài 6.png",
       driveLink: "https://drive.google.com/drive/folders/1U0r5erkx4yUtGUhdn9r67hno0fLJ_Ta4",
       report: "/docs/Bài 6.pdf",
-      status: "Đang hoàn thiện"
+      status: "Hoàn Thành"
     }
   ],
   rubric: [
